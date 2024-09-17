@@ -1,7 +1,7 @@
 import ItemList from "../components/ItemList";
 
 const About = () => {
-  const hobbies = ["Czytanie", "Programowanie", "Podróże", "Muzyka"];
+  const hobbies = ["Hobby1", "Hobby2", "Hobby3", "Hobby4"];
 
   return (
     <div>

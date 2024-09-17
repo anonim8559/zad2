@@ -1,49 +1,32 @@
-// pages/index.js
 import ItemList from "../components/ItemList";
 import TextBlock from "../components/TextBlock";
 import ImageWithText from "../components/ImageWithText";
 
 const Home = () => {
-  const favoriteMovies = [
-    "Inception",
-    "Interstellar",
-    "Matrix",
-    "The Godfather",
-  ];
+  const favoriteMovies = ["Film1", "Film2", "Film3", "Film4"];
 
   return (
     <div>
       <h1>Strona Główna</h1>
 
-      {/* Kontener na 3 kolumny */}
       <div style={styles.columnsContainer}>
-        {/* Kolumna 1: Powitalny blok tekstu */}
         <div style={styles.column}>
-          <TextBlock
-            title="Witaj na stronie!"
-            text="To jest strona główna, na której możesz znaleźć różne informacje."
-          />
+          <TextBlock title="Tytuł" text="Tekst" />
         </div>
 
-        {/* Kolumna 2: Lista ulubionych filmów */}
         <div style={styles.column}>
           <h2>Ulubione Filmy:</h2>
           <ItemList items={favoriteMovies} />
         </div>
 
-        {/* Kolumna 3: Obrazek z tekstem */}
         <div style={styles.column}>
-          <ImageWithText
-            imageUrl="https://via.placeholder.com/300"
-            description="To jest przykładowy obrazek na stronie głównej."
-          />
+          <ImageWithText imageUrl="https://img.redro.pl/obrazy/komputer-przenosny-ilustracja-kreskowka-wektor-komputera-przenosnego-700-153343154.jpg" />
         </div>
       </div>
     </div>
   );
 };
 
-// Definicja stylów inline
 const styles = {
   columnsContainer: {
     display: "flex",
